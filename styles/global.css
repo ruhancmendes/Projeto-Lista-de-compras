@@ -15,21 +15,74 @@
   --bg-primary: #f4f5fb;
   --bg-secondary: #ffffff;
   /*color*/
-  --color-brand: #CA3884;
-  --color-brand-hover: #A52C6B;
-  --color-danger: #C93847;
+  --color-brand: #ca3884;
+  --color-brand-hover: #a52c6b;
+  --color-danger: #c93847;
 
-  --content-primary: #080B12;
+  --content-primary: #080b12;
   --content-secondary: #374151;
-  --content-tertiary: #9CA3AF;
-  --always-white: #FFFFFF;
+  --content-tertiary: #9ca3af;
+  --always-white: #ffffff;
 
-  --border-primary: #D1D5DB;
-  --border-hover: #B9C2D0;
+  --border-primary: #d1d5db;
+  --border-hover: #b9c2d0;
   /*font family*/
   --ff: "Inter", serif;
   --title: 700 1.5rem/2rem var(--ff);
   --label: 600 1rem/1.25rem var(--ff);
   --paragraph: 500 1rem/1.25rem var(--ff);
   --link: 500 0.875rem/1rem var(--ff);
+  /*padding*/
+  --px-base: 2rem;
+  --py-logo: 1.563rem;
+}
+html {
+  font-family: var(--ff);
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg-primary);
+}
+h1 {
+  font: var(--title);
+  color: var(--content-primary);
+  margin-top: 1rem;
+}
+p {
+  font: var(--paragraph);
+  color: var(--content-secondary);
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font: var(--link);
+  color: var(--color-brand);
+}
+.px-base {
+  padding-inline: var(--px-base);
+}
+.py-logo {
+  padding-block: var(--py-logo);
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.c-content {
+  justify-content: center;
+}
+.container {
+  --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--px-base) * 2);
+  margin-inline: auto;
+}
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem;
+  }
+  :root {
+    --px-base: 23.063rem;
+  }
 }
