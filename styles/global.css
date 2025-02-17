@@ -67,6 +67,12 @@ a {
 .flex {
   display: flex;
 }
+.flex-1{
+  flex: 1;
+}
+.flex-2{
+  flex: 2;
+}
 .items-center {
   align-items: center;
 }
@@ -80,7 +86,7 @@ a {
 }
 @media (width >= 80em) {
   .container {
-    --max-width: 80rem;
+    --max-width: 40.625rem;
   }
   :root {
     --px-base: 23.063rem;
