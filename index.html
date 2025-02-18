@@ -41,29 +41,21 @@
           <input type="text" id="newItem" placeholder="Adicione um novo item" />
         </div>
         <div class="flex-1">
-          <button type="submit">Adicionar item</button>
+          <button type="submit" class="submit-button">Adicionar item</button>
         </div>
-      </div>
-    </form>
+      </div>                  
+    </form>               
 
     <footer class="container">
-      <div id="list" class="flex">
-        <div id="items" class="flex c-content items-center">
-          <input type="checkbox" name="check" id="check1" value="c1">
-          <p id="item">Pão de forma</p>
-          <button id="close">
-            <img src="assets/trashcan.svg" alt="">
-          </button>
-        </div>
-        <div id="items" class="flex c-content items-center">
-          <input type="checkbox" name="check" id="check2" value="c2">
-          <p id="item">Café preto</p>
-          <button id="close">
-            <img src="assets/trashcan.svg" alt="">
-          </button>
-        </div>
+      <div id="list" class="list flex"></div>
+      <div id="item-removed" class="flex item-remove items-center">
+        <img src="assets/danger-icon.svg" alt="" class="danger" />
+        <p>O item foi removido da lista</p>
+        <button class="x">
+          <img src="assets/X.svg" alt="" />
+        </button>
       </div>
     </footer>
-    <script href="scripts.js"></script>
   </body>
+  <script src="scripts.js"></script>
 </html>
